@@ -17,6 +17,41 @@ main {
     flex-direction: column;
 }
 
+/* sections in Main are flexboxes with row directions. Should take 100% of screenwidth and 
+90% of screen height; the remaining 10% of screen height occupied by fixed-position Navbar (below) */
+main section {
+    display: Flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vw;
+    /* border: solid 5px white; */
+    padding-top: 10vh;
+    margin-left: 5%;
+}
+
+/* divs are flexboxes with column directions */
+div {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    /* border: solid 5px white; */
+}
+
+/* image should take up 60% of the width of its container, and maintain aspect ratio. Rounded corners. */
+div img {
+    height: auto;
+    width: 60%;
+    border-radius: 15%;
+    margin: 5%;
+}
+
+/* For centering elements in a flexbox */
+.centered {
+    justify-items: center;
+    align-items: center;
+}
+
+
 /* Nav Bar should always be at the top of the screen, at 100% of screen-width, and 10% of screen height
 Nav links will be on the right. Should never need to wrap. 
 Had to make some fiddly adjustments to top and left margin to avoid black space. */
@@ -43,22 +78,14 @@ nav a {
     padding-top: 3%;
 }
 
+/* Nav bar links turn red on hover */
 nav a:hover {
     color: red;
 }
 
-main section {
-    height: 90vh;
-    width: 100vw;
-    /* border: solid 5px white; */
-    padding-top: 10vh;
-}
-
-footer {
+/* Placeholder Footer Styling */
+footer h1 {
     text-align: center;
     color: gray;
+    font-family: "Roboto Mono";
 }
-
-/* #Intro {
-     border: solid 5px white; 
-} */
