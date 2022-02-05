@@ -33,7 +33,7 @@ nav {
     font-family: "Roboto Mono";
 }
 
-/* Placeholder code -- padding for nav bar items. Currently paragraph tags. */
+/* Padding and formatting for nav bar items. */
 nav a {
     padding-right: 1%;
     text-decoration: none;
