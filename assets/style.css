@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Set Background Color to Black and base text-color to White */
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Main is a flexbox. Uses Google Fonts. Sets a top-padding so that the Nav Bar won't overlap */
+main {
+    display: flex;
+    font-family: "Shadows Into Light";
+    /* border: solid 5px lightblue; */
+    padding-top: 10vh;
+}
+
+/* Nav Bar should always be at the top of the screen, at 100% of screen-width, and 10% of screen height
+Nav links will be on the right. Should never need to wrap. 
+Had to make some fiddly adjustments to top and left margin to avoid black space. */
+nav {
+    position: fixed;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* border: solid 5px white; */
+    margin-top: -1.5vh;
+    margin-left: -0.5vw;
+    background-color: rgb(26, 25, 25);
+    font-family: "Roboto Mono";
+}
+
+/* Placeholder code -- padding for nav bar items. Currently paragraph tags. */
+nav a {
+    padding-right: 1%;
+    text-decoration: none;
+    color: white;
+    padding-top: 3%;
+}
+
+nav a:hover {
+    color: red;
+}
+
+/* #Intro {
+     border: solid 5px white; 
+} */
