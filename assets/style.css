@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Set Background Color to Black and base text-color to White */
@@ -13,7 +14,7 @@ main {
     display: flex;
     font-family: "Shadows Into Light";
     /* border: solid 5px lightblue; */
-    padding-top: 10vh;
+    flex-direction: column;
 }
 
 /* Nav Bar should always be at the top of the screen, at 100% of screen-width, and 10% of screen height
@@ -21,7 +22,7 @@ Nav links will be on the right. Should never need to wrap.
 Had to make some fiddly adjustments to top and left margin to avoid black space. */
 nav {
     position: fixed;
-    width: 100vw;
+    width: 101vw;
     height: 10vh;
     display: flex;
     flex-direction: row;
@@ -31,6 +32,7 @@ nav {
     margin-left: -0.5vw;
     background-color: rgb(26, 25, 25);
     font-family: "Roboto Mono";
+    padding-right: 2%;
 }
 
 /* Padding and formatting for nav bar items. */
@@ -45,6 +47,13 @@ nav a:hover {
     color: red;
 }
 
+main section {
+    height: 90vh;
+    width: 99vw;
+    /* border: solid 5px white; */
+    padding-top: 10vh;
+
+}
 /* #Intro {
      border: solid 5px white; 
 } */
