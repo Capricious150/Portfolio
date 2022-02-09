@@ -9,6 +9,37 @@ body {
     color: white;
 }
 
+/* Nav Bar should always be at the top of the screen, at 100% of screen-width, and 10% of screen height
+Nav links will be on the right. Should never need to wrap. 
+Had to make some fiddly adjustments to top and left margin to avoid black space. */
+
+nav {
+    position: fixed;
+    width: 99vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -1.5vh;
+    margin-left: -0.5vw;
+    background-color: rgb(26, 25, 25);
+    font-family: "Roboto Mono";
+    padding-right: 1%;
+}
+
+/* Padding and formatting for nav bar items. */
+nav a {
+    padding-right: 1%;
+    text-decoration: none;
+    color: white;
+    padding-top: 3%;
+}
+
+/* Nav bar links turn red on hover */
+nav a:hover {
+    color: red;
+}
+
 /* Main is a flexbox. Uses Google Fonts. Sets a top-padding so that the Nav Bar won't overlap */
 main {
     display: flex;
@@ -31,6 +62,7 @@ main section {
     margin-left: 1%;
 }
 
+/* Some font-sizing for headers */
 h1 {
     font-size: 200%;
 }
@@ -39,37 +71,17 @@ h3 {
     font-size: 150%;
 }
 
-/* Nav Bar should always be at the top of the screen, at 100% of screen-width, and 10% of screen height
-Nav links will be on the right. Should never need to wrap. 
-Had to make some fiddly adjustments to top and left margin to avoid black space. */
-
-nav {
-    position: fixed;
-    width: 99vw;
-    height: 10vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    /* border: solid 5px white; */
-    margin-top: -1.5vh;
-    margin-left: -0.5vw;
-    background-color: rgb(26, 25, 25);
-    font-family: "Roboto Mono";
-    padding-right: 1%;
+/* These tags are for some spans in my headers, to make the text pop */
+#SuperHeader1 {
+    font-size: 120%;
+    color: crimson;
 }
 
-/* Padding and formatting for nav bar items. */
-nav a {
-    padding-right: 1%;
-    text-decoration: none;
-    color: white;
-    padding-top: 3%;
+#SuperHeader2 {
+    font-size:120%;
+    color: crimson;
 }
 
-/* Nav bar links turn red on hover */
-nav a:hover {
-    color: red;
-}
 
 /* divs are flexboxes with column directions */
 div {
@@ -92,6 +104,12 @@ div img {
     justify-items: center;
     align-items: center;
 }
+
+/* Boy I wish I knew about Flex Grid before I wrote this stuff. */
+/* The next three IDs and three Classes are all to format the cards in the "Work" portion of my page */
+/* Ultimately they're designed to have a larger "main" card on the left, and several smaller "side" cards to the right */
+/* They are carefully spaced to be responsive to screensize. */
+/* In future iterations of my portfolio, I picture the side cards wrapping to the right and below the main card */
 
 #Work {
     display: flex;
@@ -120,11 +138,11 @@ div img {
 .WorkCard {
     display: flex;
     flex-direction: column;
-    border: 5px solid white;
+    border: 2px solid white;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-    background-color:darkblue;
+    background-color:rgb(8, 8, 61);
     width: auto;
     margin-left: 0;
     margin-right: 0;
@@ -137,7 +155,6 @@ div img {
 }
 
 .WorkDesc {
-    /* border: 5px solid white; */
     display: flex;
     width: auto;
     justify-items: center;
@@ -145,11 +162,11 @@ div img {
     flex-wrap: wrap;
 }
 
+/* The About Me portion of the page is ultimately just some styled text.  */
+
 #AboutMe {
-    /* border: solid 5px white; */
     margin-top: 5%;
     justify-content:flex-end;
-    font-size: 1rem;
     flex-direction: column;
     flex-wrap: wrap;
     width: 40%;
@@ -162,18 +179,9 @@ div img {
     margin-bottom: 4%;
 }
 
+/* This tag is for some spans that appear in the About Me page */
 #Super {
-    font-size: 1.1rem;
-    color: crimson;
-}
-
-#SuperHeader1 {
-    font-size: 120%;
-    color: crimson;
-}
-
-#SuperHeader2 {
-    font-size:120%;
+    font-size: 110%;
     color: crimson;
 }
 
@@ -185,8 +193,31 @@ footer h3 {
     font-family: "Roboto Mono";
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 820px) {
+
+    nav {
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav a {
+        padding-right: 3%;
+    }
+
     main section {
         flex-direction: column;
+    }
+
+    #Home {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #Work, #About, #Contact {
+        align-items: center;
+    }
+
+    #AboutMe {
+        width: 75%;
     }
 }
