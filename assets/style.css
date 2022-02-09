@@ -1,3 +1,4 @@
+/* Set box-sizing and scroll behavior for nav bar */
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
@@ -171,6 +172,7 @@ div img {
 }
 
 /* The About Me portion of the page is ultimately just some styled text.  */
+/* Looks great on a phone browser */
 
 #AboutMe {
     margin-top: 5%;
@@ -193,6 +195,7 @@ div img {
     color: crimson;
 }
 
+/* Quick flexbox for Address container */
 address {
     display: flex;
     flex-direction: column;
@@ -200,14 +203,7 @@ address {
     align-content: center;
 }
 
-
-/* Placeholder Footer Styling */
-footer h3 {
-    text-align: center;
-    color: gray;
-    font-family: "Roboto Mono";
-}
-
+/* Minor adjustments are needed for smaller displays. Chiefly several elements are centered or made into columns */
 @media screen and (max-width: 820px) {
 
     nav {
