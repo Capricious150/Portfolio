@@ -22,7 +22,7 @@ main {
 main section {
     display: Flex;
     flex-direction: row;
-    height: 90vh;
+    min-height: 90vh;
     width: 96vw;
     /* border: solid 5px white; */
     padding-top: 10vh;
@@ -38,6 +38,10 @@ h1 {
 h3 {
     font-size: 150%;
 }
+
+/* Nav Bar should always be at the top of the screen, at 100% of screen-width, and 10% of screen height
+Nav links will be on the right. Should never need to wrap. 
+Had to make some fiddly adjustments to top and left margin to avoid black space. */
 
 nav {
     position: fixed;
@@ -98,7 +102,7 @@ div img {
     display: flex;
     width: 50vw;
     height: auto;
-    margin-top: 10%;
+    margin-top: 4%;
     justify-content: center;
     align-content: center;
 }
@@ -108,7 +112,7 @@ div img {
     flex-direction: column;
     width: 35vw;
     height: auto;
-    margin-top: 10%;
+    margin-top: 4%;
     justify-content: center;
     align-content: center;
 }
@@ -126,6 +130,11 @@ div img {
     margin-right: 0;
 }
 
+.WorkCard a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
 .WorkDesc {
     /* border: 5px solid white; */
@@ -133,6 +142,7 @@ div img {
     width: auto;
     justify-items: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #AboutMe {
@@ -167,14 +177,16 @@ div img {
     color: crimson;
 }
 
-/* Nav Bar should always be at the top of the screen, at 100% of screen-width, and 10% of screen height
-Nav links will be on the right. Should never need to wrap. 
-Had to make some fiddly adjustments to top and left margin to avoid black space. */
-
 
 /* Placeholder Footer Styling */
 footer h3 {
     text-align: center;
     color: gray;
     font-family: "Roboto Mono";
+}
+
+@media screen and (max-width: 700px) {
+    main section {
+        flex-direction: column;
+    }
 }
