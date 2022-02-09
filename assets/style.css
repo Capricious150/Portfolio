@@ -154,6 +154,14 @@ div img {
     align-content: center;
 }
 
+#MainCard a img {
+    height: auto;
+    width: 80%;
+    border-radius: 15%;
+    margin: 1%;
+}
+
+
 .WorkDesc {
     display: flex;
     width: auto;
@@ -183,6 +191,13 @@ div img {
 #Super {
     font-size: 110%;
     color: crimson;
+}
+
+address {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 
