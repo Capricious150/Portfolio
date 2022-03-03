@@ -14,8 +14,5 @@ I struggled most with the Work cards, which will be completely redone on future 
 
 I'm most happy with the navigation elements and the text segments. My use of spans with slightly increased fontsize and crimson coloring really makes the "About Me" section pop.
 
-### Important Note:
-
-The work contained in the "Work" section of this page are both placeholders. While they DO represent work that I personally completed, they are either just refactored code (in the case of HoriSEOn) or incomplete projects (in the case of CSS Snippets). 
-
-I intentionally left one of the work boxes with "Image Placeholder" and "Placeholder Text" to better show how the card is formatted, and to avoid linking to compeltely unaffiliated work. 
+### Update March 1, 2022
+Workcards have been updated, they are a bit more pleasing to the eye, and contain better, more modern examples of my work
