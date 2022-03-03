@@ -96,7 +96,7 @@ div {
 div img {
     height: auto;
     width: 60%;
-    border-radius: 15%;
+    border-radius: 5%;
     margin: 1%;
 }
 
@@ -154,12 +154,13 @@ div img {
     display: flex;
     justify-content: center;
     align-content: center;
+    color: white;
 }
 
 #MainCard a img {
     height: auto;
     width: 80%;
-    border-radius: 15%;
+    border-radius: 5%;
     margin: 1%;
 }
 
