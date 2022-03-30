@@ -242,7 +242,7 @@ address {
 }
 
 @media screen and (min-width: 1367px){
-    #About, #Contact {
-        font-size: 125%;
+    #Work, #About, #Contact {
+        font-size: 135%;
     }
 }
