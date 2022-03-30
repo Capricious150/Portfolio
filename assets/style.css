@@ -95,7 +95,7 @@ div {
 /* image should take up 60% of the width of its container, and maintain aspect ratio. Rounded corners. */
 div img {
     height: auto;
-    width: 60%;
+    width: 40%;
     border-radius: 5%;
     margin: 1%;
 }
@@ -115,6 +115,7 @@ div img {
 #Work {
     display: flex;
     flex-wrap: wrap;
+    height: 80vh;
 }
 
 #MainCard {
@@ -159,7 +160,7 @@ div img {
 
 #MainCard a img {
     height: auto;
-    width: 80%;
+    width: 70%;
     border-radius: 5%;
     margin: 1%;
 }
@@ -230,10 +231,18 @@ address {
     }
 
     #Work, #About, #Contact {
+        display: flex;
+        flex-direction: column;
         align-items: center;
     }
 
     #AboutMe {
         width: 75%;
+    }
+}
+
+@media screen and (min-width: 1367px){
+    * {
+        font-size: larger;
     }
 }
