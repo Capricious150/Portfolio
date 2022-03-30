@@ -243,6 +243,6 @@ address {
 
 @media screen and (min-width: 1367px){
     #AboutMe, #Contact {
-        font-size: large;
+        font-size: larger;
     }
 }
